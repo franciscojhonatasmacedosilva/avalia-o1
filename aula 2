@@ -1,0 +1,15 @@
+questâo 1:
+
+Como atividade prática da Aula 02, realize a instalação da JDK e
+da IDE IntelliJ, bem como a criação de um primeiro projeto em Java. O
+projeto deve ter um classe com o método principal, e imprimir o seu
+nome no console (tela).
+
+ java
+
+        public class Main{
+          public static void(string args){
+           system.out.println(jhonats);
+
+      }
+   }
