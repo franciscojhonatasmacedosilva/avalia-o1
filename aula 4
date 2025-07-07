@@ -1,0 +1,15 @@
+public class Retangulo {
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double base = 5.5;
+        double altura = 3.2;
+
+        // Cálculo da área e perímetro
+        double area = base * altura;
+        double perimetro = 2 * (base + altura);
+
+        // Exibição dos resultados
+        System.out.println("Área do retângulo: " + area);
+        System.out.println("Perímetro do retângulo: " + perimetro);
+    }
+}
