@@ -1,0 +1,13 @@
+public class ComparacaoIdades {
+    public static void main(String[] args) {
+        // Declaração das idades
+        int idadePessoa1 = 30;
+        int idadePessoa2 = 25;
+
+        // Comparação
+        boolean primeiraMaisVelha = idadePessoa1 > idadePessoa2;
+
+        // Exibição do resultado
+        System.out.println("A primeira pessoa é mais velha: " + primeiraMaisVelha);
+    }
+}
