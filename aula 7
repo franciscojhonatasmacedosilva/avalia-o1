@@ -1,0 +1,43 @@
+Ao compreender que além dos tipos primitivos de dados, o Java
+oferece os tipos de referência (classes) correspondentes a todos os
+tipos primitivos, pesquise e identifique um método que lhes chame a
+atenção em cada classe dos tipos Wrapper: Integer, Double,
+Character, Boolean e String.
+Ao final implemente um pequeno algoritmo que utilize pelo
+menos três dos métodos pesquisados.
+
+import java.util.Scanner;
+
+public class WrapperExemplo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada de número como String com espaços
+        System.out.print("Digite um número inteiro com espaços ao redor: ");
+        String entrada = scanner.nextLine();
+
+        // Limpa os espaços e converte para int
+        String entradaLimpa = entrada.trim();
+        int numero = Integer.parseInt(entradaLimpa);
+        System.out.println("Número convertido: " + numero);
+
+        // Verifica se o primeiro caractere da entrada é um dígito
+        char primeiroChar = entradaLimpa.charAt(0);
+        boolean ehDigito = Character.isDigit(primeiroChar);
+        System.out.println("O primeiro caractere é um dígito? " + ehDigito);
+
+        // Entrada para conversão booleana
+        System.out.print("Digite 'true' ou 'false': ");
+        String booleanInput = scanner.nextLine();
+        boolean valorBooleano = Boolean.parseBoolean(booleanInput);
+        System.out.println("Valor booleano convertido: " + valorBooleano);
+
+        scanner.close();
+    }
+}
+
+Digite um número inteiro com espaços ao redor:    42
+Número convertido: 42
+O primeiro caractere é um dígito? true
+Digite 'true' ou 'false': true
+Valor booleano convertido: true
